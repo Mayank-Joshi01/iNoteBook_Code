@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.noteitmcontainer{
+  display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.note-icons i{
+color: green;
+font-size: 30px;
+cursor: pointer;
+margin-right: 20px;
+}
+.note-icons{
+  display: flex;
+      justify-content:start;
+      align-items: center;
+}
+
+.user-icon{
+  color: white;
+  font-size: 40px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.user_Container{
+  position: fixed;
+  z-index: 9999;
+    top: 12px;
+    right:0px;
+}
+.navbar{
+  position: fixed;
+    z-index: 9999;
+    width: 100%;
+    top: 0;
+}
+
+.user{
+  display: flex;
+}
+
+.user button{
+  margin-right: 5px;
+}
+input[type="file"]{
+  display: none;
+}
+.img-label{
+  cursor: pointer;  
+  margin-top: 8px;
+}
+.img-form{
+  object-fit: cover;;
+}
+.password-container{
+  height: 50px;
+  background-color: whitesmoke;
+  margin-top: 20px;
+  line-height: 50px;
+  width:58.333333333%;
+
+}
+.password-container div {
+display: flex;
+justify-content: space-between;
+}
+.password-container:hover{
+  background-color: #f1f1f1;
+}
+.password-container p{
+  cursor: pointer;
+  font-family: "Roboto", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@media(max-width:991px){
+  .user_Container{
+      position: fixed;
+      top: 12px;
+      right: 80px;
+      z-index: 9999;
+  
+  }
+  .password-container{
+    width:75%
+  }
+  
+  }
+  @media(max-width:768px){
+    .noteitmcontainer{
+      justify-content:center;
+    }
+    .password-container{
+      width:100%
+    }
+    }
+
+    @media(max-width:458px){
+      .password-container div{
+        display: block;
+      }
+    
+    }
+    .card-img-top{
+     height: 250px;
+      background-image: url("./images/iron\ man\ 1.png");
+      background-size: cover;
+      background-position: center;
+    }
+    .social-icon i{
+      font-size: 30px;
+      margin-right: 20px;
+      cursor: pointer;
+     color: #198754;
+      text-decoration: none;
+     transition:font-size 0.3s ease-in-out ;
+     width: 100%;
+     text-align: center;
+    }
+    .social-icon i:hover{
+      font-size: 40px;
+    }
+    .social-icon a:link{
+      text-decoration: none;
+     
+    }
+    .card{
+      margin: 30px 0px 20px 0px;
+    }
+    .social-icon{
+      height: 50px;
+      display: flex;
+      align-items: center;
+    }
+    .social-icon a{
+      width: 50px;
+      text-align: center;
+    }
+    .navbar-toggler{
+      margin-right: 10px;
+    }
+    .navbar-brand{
+      margin-left: 20px;
+    }
+    .m-t30{
+      margin-top: 30px;
+    }
