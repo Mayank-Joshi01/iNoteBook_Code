@@ -9,8 +9,7 @@ function Signup(props) {
 
   const handelSubmit = async (e) => {
     e.preventDefault();
-    // const url = "https://inotebook-backend-e8kg.onrender.com/api/auth/createuser"
-    const url = "http://localhost:8001/api/auth/createuser"
+    const url = `${process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api"}/auth/createuser`
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -24,7 +23,7 @@ function Signup(props) {
     if (json.sucess) {
       // redirect
       localStorage.setItem('token', json.token)
-      props.Showalert("Accont Created Success fullay", "success")
+      props.Showalert("Account Created Successfully", "success")
       navigate('/iNoteBook/')
     }
     else {

@@ -9,7 +9,7 @@ function User(props) {
   const [password, setpassword] = useState(false)
 
   const SetIMG = async (formData) => {
-    const url = "https://inotebook-backend-e8kg.onrender.com/api/user/updateimg";
+    const url = `${process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api"}/user/updateimg`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -98,7 +98,7 @@ const handelpassword = () => {
 const handelPasswordSubmit = async (e) => {
   e.preventDefault();
   const password = e.target[0].value;
-  const url = "https://inotebook-backend-e8kg.onrender.com/api/user/updatepassword";
+  const url = `${process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api"}/user/updatepassword`;
   const response = await fetch(url, {
     method: "POST",
     headers: {
@@ -130,7 +130,7 @@ const handelPasswordSubmit = async (e) => {
                     <div className="flex-shrink-0" style={{ width: "130px", height: "130px" }}>
                       <img src={imgUrl} align="middle" alt="Generic placeholder image" className="img-fluid img-form" style={{ width: "130px", height: "130px", bordeRadius: "10px" }} />
                     </div>
-                    <form action="http://localhost:8001/api/user/updateimg" method="post" encType="multipart/form-data" className='img-form' >
+                    <form action={`${process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api"}/user/updateimg`} method="post" encType="multipart/form-data" className='img-form' >
                       <label htmlFor="image" className="img-label btn btn-outline-primary me-1 flex-grow-1">{values.text ? "Change" : "Change Image"}</label>
                       <input type="file" id='image' name="profileImage" onChange={handelchange} />
                       <button type="submit" onClick={handelSubmit} className={`btn img-label btn-outline-success me-1 flex-grow-1 ${values.btn ? "" : "d-none"}`}>Save</button>

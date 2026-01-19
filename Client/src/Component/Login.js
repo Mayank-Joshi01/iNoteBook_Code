@@ -8,7 +8,7 @@ function Login(props) {
 
   const handelSubmit = async (e) => {
     e.preventDefault();
-    const url = "https://inotebook-backend-e8kg.onrender.com/api/auth/login"
+    const url = `${process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api"}/auth/login`
     const response = await fetch(url, {
       method: "POST",
       headers: {
