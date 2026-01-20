@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/iNoteBook/static/css/main.a172a2a2.css",
+    "main.js": "/iNoteBook/static/js/main.009358d8.js",
+    "static/media/iron man 1.png": "/iNoteBook/static/media/iron man 1.90c99a4c81f4eae22f19.png",
+    "index.html": "/iNoteBook/index.html",
+    "main.a172a2a2.css.map": "/iNoteBook/static/css/main.a172a2a2.css.map",
+    "main.009358d8.js.map": "/iNoteBook/static/js/main.009358d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a172a2a2.css",
+    "static/js/main.009358d8.js"
+  ]
+}
