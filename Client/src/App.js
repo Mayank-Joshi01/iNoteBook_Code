@@ -31,11 +31,11 @@ function App() {
         <Alert alert={alert}/>
         <div className="container">
         <Routes>
-          <Route exact path='/iNoteBook/' element={<Home Showalert={Showalert}/>} />
-          <Route exact path='/iNoteBook/about/' element={<About Showalert={Showalert}/>} />
-          <Route exact path='/iNoteBook/signup/' element={<Signup Showalert={Showalert}/>} />
-          <Route exact path='/iNoteBook/login/' element={<Login Showalert={Showalert}/>} />
-          <Route exact path='/iNoteBook/user/' element={<User Showalert={Showalert}/>} />
+          <Route exact path='/' element={<Home Showalert={Showalert}/>} />
+          <Route exact path='/about/' element={<About Showalert={Showalert}/>} />
+          <Route exact path='/signup/' element={<Signup Showalert={Showalert}/>} />
+          <Route exact path='/login/' element={<Login Showalert={Showalert}/>} />
+          <Route exact path='/user/' element={<User Showalert={Showalert}/>} />
         </Routes>
         </div>
       </NoteState>

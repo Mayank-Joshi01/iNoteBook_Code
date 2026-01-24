@@ -17,7 +17,7 @@ function Notes(props) {
       allNotes();
     }
     else {
-      navigate('/iNoteBook/login')
+      navigate('/login/')
     }
     // eslint-disable-next-line
   }, [])

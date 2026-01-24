@@ -7,7 +7,6 @@ const jwt = require('jsonwebtoken');
 const featuser = require("../middleware/featuser")
 
 const JWT_SECRET = process.env.JWT_SECRET;
-console.log(JWT_SECRET)
 
 // Route 1 : Creates a user using POST: "api/auth/createuser" . No login required
 router.post('/createuser', [

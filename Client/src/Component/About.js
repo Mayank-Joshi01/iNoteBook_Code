@@ -43,9 +43,6 @@ const About = () => {
   <a href="https://www.linkedin.com/in/mayank-joshi-027b00325/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
     <i className="fab fa-linkedin fa-2x"></i>
   </a>
-  <a href="https://www.instagram.com/mayankjoshi.in.01/ ">
-    <i className="fab fa-instagram fa-2x"></i>
-  </a>
   {/* Email  */}
   <a href="mailto:mayankjoshi.in.123@gmail.com">
     <i className="fas fa-envelope fa-2x"></i>

@@ -3,7 +3,7 @@ import { useState,useEffect, use} from "react";
 
 const NoteState = (props) => {
 
-  const host = process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api/notes"
+  const host = process.env.REACT_APP_API_URL || "http://localhost:8001/api";
 
   const initialNotes = []
   const [notes, setnotes] = useState(initialNotes)
@@ -106,7 +106,7 @@ useEffect(() => {
 
 // Getting User Data
 const getUserdata = async ()=>{
-  const url = `${process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api"}/auth/getuser`
+  const url = `${host}/auth/getuser`;
   const response = await fetch(url, {
     method: "POST",
     headers: {
@@ -116,7 +116,6 @@ const getUserdata = async ()=>{
   });
   const json = await response.json();
   setuser({json})
-
 
 }
 

@@ -9,7 +9,7 @@ function Signup(props) {
 
   const handelSubmit = async (e) => {
     e.preventDefault();
-    const url = `${process.env.REACT_APP_Backend_Base_URL || "http://localhost:8001/api"}/auth/createuser`
+    const url = `${process.env.REACT_APP_API_URL || "http://localhost:8001/api"}/auth/createuser`;
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -24,7 +24,7 @@ function Signup(props) {
       // redirect
       localStorage.setItem('token', json.token)
       props.Showalert("Account Created Successfully", "success")
-      navigate('/iNoteBook/')
+      navigate('/')
     }
     else {
       props.Showalert("Invalid Credentials", "danger")
