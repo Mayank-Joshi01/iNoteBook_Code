@@ -21,7 +21,7 @@ useEffect(() => {
 
   // Get all notes 
   const allNotes = async () => {
-    const url = `${host}/fetchallnotes`
+    const url = `${host}/notes/fetchallnotes`
     const response = await fetch(url, {
       method: "GET",
       headers: {
@@ -41,7 +41,7 @@ useEffect(() => {
 
   const addNote = async (title, description, tag) => {
     //TODO : API Call
-    const url = `${host}/addnote`
+    const url = `${host}/notes/addnote`
     const response = await fetch(url, {
       method: "POST",
       headers: {
@@ -62,7 +62,7 @@ useEffect(() => {
   /// Delete a Note
   const deleteNote = async (id) => {
     // TODO : API Call
-    const url = `${host}/deletenote/${id}`
+    const url = `${host}/notes/deletenote/${id}`
     const response = await fetch(url, {
       method: "DELETE",
       headers: {
@@ -78,7 +78,7 @@ useEffect(() => {
   /// Edit a Note
   const editNote = async (id, title, description, tag) => {
     // API Call
-    const url = `${host}/updatenote/${id}`
+    const url = `${host}/notes/updatenote/${id}`
     const response = await fetch(url, {
       method: "PUT",
       headers: {

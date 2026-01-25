@@ -67,8 +67,8 @@ Follow these steps to set up the project locally on your machine.
 
 * Clone the repository
 ```
-git clone [https://github.com/](https://github.com/)[your-username]/[repo-name].git
-cd [repo-name]
+git clone https://github.com/Mayank-Joshi01/iNoteBook.git
+cd iNoteBook
 ```
 
 * Install Backend Dependencies
